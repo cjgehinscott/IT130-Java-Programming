@@ -13,7 +13,7 @@ public class HelloWorld {
     System.out.printf("%d", 200);
    }// end of main method
 
-} // end of HelloWorld class
+} // end of Hello World class
 
  
 
