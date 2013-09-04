@@ -30,11 +30,13 @@ public class PayStub {
     
     //Output
     System.out.println(name + ", you worked " + hours + " hours " + "at an hourly pay rate of $" + payRate + ".");
-    double fedWithold = ((hours * payRate)*4) * (fedTax / 100);
+    double grossPay = ((hours * payRate)*4);
+    System.out.println("Your gross pay, not including deductions, for the current pay period is: $" + grossPay + ".");
+    double fedWithold = grossPay * (fedTax / 100);
     System.out.println("The amount of federal taxes witheld for the current pay period is: $" + fedWithold + ".");
-    double stateWithold = ((hours * payRate)*4) * (stateTax / 100);
+    double stateWithold = grossPay * (stateTax / 100);
     System.out.println("The amount of state taxes witheld for the current pay period is: $" + stateWithold + ".");
-    double finalPay = ((hours * payRate)*4) - fedWithold - stateWithold;
+    double finalPay = grossPay - fedWithold - stateWithold;
     System.out.println("Your pay after deductions for the current pay period is: $" + finalPay + ".");
                     
     
