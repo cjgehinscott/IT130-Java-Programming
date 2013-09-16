@@ -63,8 +63,6 @@ public class Lawn {
                   System.out.println("You didn't enter a correct payment plan above.  The default weekly payment plan will be applied to your account.");
                }
     }
-    
-    
   }//end main method
 
 }//end Lawn class
