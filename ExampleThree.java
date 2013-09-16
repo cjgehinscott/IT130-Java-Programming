@@ -31,7 +31,7 @@ public class ExampleThree{
       System.out.println("The number " + number + " is positive.");
     }else if(number < 0) {
       System.out.println("The number " + number + " is negative.");
-    }else(number == 0) {
+    }else{
       System.out.println("The number " + number + " is neither negative or positive.");
     }
     
