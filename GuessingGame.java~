@@ -1,0 +1,11 @@
+/*CJ Gehin-Scott
+ * 9/17/2013
+ * IT-130*/
+
+public class GuessingGame{
+  public static void main(String[] args){
+    int winning = (int) (math.random() * 1000) + 1;
+    System.out.println("Test winning number " + winning);
+  
+  }//end of main method
+}//ends Guessing Game class
