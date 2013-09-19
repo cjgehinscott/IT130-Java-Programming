@@ -1,0 +1,30 @@
+/*CJ Gehin-Scott
+ * 9/17/2013
+ * IT-130*/
+
+import java.util.Scanner;
+
+public class Commission {
+
+  public static void main(String[] args){
+  Scanner inputBox = new Scanner(System.in);
+  double productOne = 239.99;
+  double productTwo = 129.75;
+  double productThree = 99.95;
+  double productFour = 350.89;
+  int numberOne;
+  int numberTwo;
+  int numberThree;
+  int numberFour;
+  int productCount = 0;
+  while(true){
+  System.out.println("Enter the number of product sold for product #" + (productCount+1));
+  
+  if(productCount == 10){
+    break;
+  }
+  }//ends while loop
+  
+  
+  }// end of main method
+}//end of Commission class
