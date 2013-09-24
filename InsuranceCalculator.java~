@@ -1,0 +1,22 @@
+/*CJ Gehin-Scott
+ * 9/24/2013
+ * IT-130*/
+
+import java.util.Scanner;
+
+public class InsuranceCalculator{
+  public static void main(String[] args){
+ 
+    Scanner inputBox = new Scanner(System.in);
+    int age;
+    String gender = "";
+    
+    System.out.println("Please enter your age: ");
+    age = inputBox.nextInt();
+    System.out.println("Please enter your gender (male or female): ");
+    gender = inputBox.nextLine();
+    
+    
+    
+  }//end main
+}//end InsuranceCalculator class
