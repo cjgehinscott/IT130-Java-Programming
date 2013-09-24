@@ -20,7 +20,7 @@ public class Commission {
   
   for(int i = 1; i <=4; i++){
     System.out.println("Enter the number of products sold for product #" + i);
-  productCount = inputBox.nextInt();
+  productCount = inputBox.nextInt(); 
       if(i ==1){
         numberOne = productCount * productOne;
      }else if(i == 2){
@@ -33,7 +33,7 @@ public class Commission {
   }
   
     double grossPay = 200 + (.09 * (numberOne + numberTwo + numberThree + numberFour));
-    System.out.println("Your gross pay for the products you sold this period is: $" + grossPay);
+    System.out.printf("Your gross pay for the products you sold this period is: $%.2f",grossPay);
     
   
   

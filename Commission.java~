@@ -12,18 +12,32 @@ public class Commission {
   double productTwo = 129.75;
   double productThree = 99.95;
   double productFour = 350.89;
-  int numberOne;
-  int numberTwo;
-  int numberThree;
-  int numberFour;
-  int productCount = 0;
-  while(true){
-  System.out.println("Enter the number of product sold for product #" + (productCount+1));
+  int productCount;
+  double numberOne = 0;
+  double numberTwo = 0;
+  double numberThree = 0;
+  double numberFour = 0;
   
-  if(productCount == 10){
-    break;
+  for(int i = 1; i <=4; i++){
+    System.out.println("Enter the number of products sold for product #" + i);
+  productCount = inputBox.nextInt();
+      if(i ==1){
+        numberOne = productCount * productOne;
+     }else if(i == 2){
+        numberTwo = productCount * productTwo;
+     }else if(i == 3){
+        numberThree = productCount * productThree;
+     }else if(i == 4){
+        numberFour = productCount * productFour;
+     }
   }
-  }//ends while loop
+  
+    double grossPay = 200 + (.09 * (numberOne + numberTwo + numberThree + numberFour));
+    System.out.println("Your gross pay for the products you sold this period is: $" + grossPay);
+    
+  
+  
+  
   
   
   }// end of main method
