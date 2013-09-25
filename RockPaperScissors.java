@@ -34,9 +34,9 @@ public class RockPaperScissors{
       }
     if(choice == computer_num){
       System.out.println("It's a draw! Both you and the computer chose the number " + choice + " which is " + selection +"."); 
-    }else if(choice > computer_num && choice < 3){
+    }else if((choice == 2 &&  computer_num == 1  && choice < 3) || (choice == 0 && computer_num == 2 && choice <3) || (choice == 1 && computer_num == 0 && choice <3) ){
       System.out.println("You win! Your " + selection + " beats the computer's " + computerSelection + "!!");
-    }else if(choice < computer_num && choice < 3){
+    }else if((choice == 1 && computer_num == 2 && choice < 3) || (choice == 0 && computer_num == 1 && choice <3) || (choice == 2 && computer_num == 0 && choice <3)){
       System.out.println("You lose! Your " + selection + " has been beaten by the computer's " + computerSelection + "!!");
     }else{
       System.out.println("Oops, that is not a valid entry please try again!");
