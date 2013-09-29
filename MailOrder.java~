@@ -1,0 +1,25 @@
+/*CJ Gehin-Scott
+ * 10/1/2013
+ * IT-130*/
+
+import java.util.Scanner;
+
+public class MailOrder{
+  
+  public static void main(String[] args){
+    
+    Scanner inputBox = new Scanner(System.in);
+    double price1 = 2.98;
+    double price2 = 4.50;
+    double price3 = 9.98;
+    double price4 = 4.49;
+    double price5 = 6.87;
+    int quantity = 0;
+    int productNumber = 0;
+    
+    System.out.println("Please enter the product number you want to add quantity to (1-5): ");
+    productNumber = inputBox.nextInt();
+    System.out.println("Ok. How many of product " + productNumber + " did you sell?");
+    quantity = inputBox.nextInt();
+  }//end main method
+}//end MailOrder class

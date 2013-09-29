@@ -21,7 +21,7 @@ public class RockPaperScissors{
     }else if(computer_num == 2){
       computerSelection = "Scissors";
     }
-    System.out.println(computer_num);
+    //System.out.println(computer_num);
     System.out.println("Welcome to Rock, Paper, Scissors");
     System.out.println("Please make a selection (0) for Rock, (1) for Paper, or (2) for Scissors: ");
     choice = inputBox.nextInt();
