@@ -28,38 +28,61 @@ public class MailOrder{
     double total4 = 0;
     double total5 = 0;
     double orderTotal = 0;
-    while(true){
-    System.out.println("Please enter the product number you want to add quantity to (1-5): ");
+    
+    do{System.out.println("Please enter the product number you want to add quantity to (1-5): ");
     productNumber = inputBox.nextInt();
     if(productNumber < 1 || productNumber > 5){
       System.out.println("I'm sorry that is not a valid product number. Please try again later.");
       break;
-    }
-    System.out.println("Ok. How many of product " + productNumber + " did you order?");
+      }
+     System.out.println("Ok. How many of product " + productNumber + " did you order?");
     count = inputBox.nextInt();
+   /* if(productNumber == 1){
+       total1 = total1 + (count * price1);
+        count1 = count1 + count;
+    }else if(productNumber == 2){
+       total2 = total2 + (count *price2);
+        count2 = count2 + count;
+    }else if(productNumber == 3){
+      total3 = total3 + (count * price3);
+        count3 = count3 + count;
+    }else if(productNumber == 4){
+      total4 = total4 + (count * price4);
+        count4 = count4 + count;
+    }else if(productNumber == 5){
+       total5 = total5 + (count * price5);
+        count5 = count5 + count;
+    }*/
     switch(productNumber){
       case 1:
-        total1 = count * price1;
-        count1 = count;
+        total1 = total1 + (count * price1);
+        count1 = count1 + count;
+        break;
       case 2:
-        total2 = count *price2;
-        count2 = count;
+        total2 = total2 + (count *price2);
+        count2 = count2 + count;
+        break;
       case 3:
-        total3 = count * price3;
-        count3 = count;
+        total3 = total3 + (count * price3);
+        count3 =count3 + count;
+        break;
       case 4: 
-        total4 = count * price4;
-        count4 = count;
+        total4 = total4 + (count * price4);
+        count4 = count4 + count;
+        break;
       case 5: 
-        total5 = count * price5;
-        count5 = count;
-    }
+        total5 = total5 + (count * price5);
+        count5 = count5 + count;
+        break;
+      }
     System.out.println("Enter (0) to add more quantity to another product or (1) to total up your order.");
     choice = inputBox.nextInt();
       if(choice == 1){
         break;
       }
-    }
+    } while(true);
+    
+    
     System.out.println("Order Summary");
     System.out.println();
     System.out.println("Product 1 quantity: " + count1 + " Cost: $" + total1);
