@@ -1,0 +1,15 @@
+/*CJ Gehin-Scott
+ * 10/8/2013
+ * IT130*/
+
+import java.util.Scanner;
+
+public class Delivery1 {
+  
+  public static void main(String[] args){
+    
+    Scanner input = new Scanner(System.in);
+    
+    
+  }//end main method
+}//end Deliver1 class
