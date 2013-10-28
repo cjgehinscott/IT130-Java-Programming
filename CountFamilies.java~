@@ -1,0 +1,14 @@
+/*CJ Gehin-Scott
+ * IT-130
+ * 10/30/2013*/
+
+import java.util.Scanner;
+
+public class CountFamilies {
+  public static void main(String[] args){
+    
+    Scanner input = new Scanner(System.in);
+    int familySize[] = new int[];
+    
+  }//end of main method
+}//end CountFamilies class

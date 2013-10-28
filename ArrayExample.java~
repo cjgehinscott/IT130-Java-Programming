@@ -1,0 +1,12 @@
+/*CJ Gehin-Scott
+ * IT-130
+ * 10/22/2013*/
+
+import java.util.Scanner;
+
+public class ArrayExample{
+  public static void main(String[] args){
+    
+    int num_array [] = new int[5];
+  }//end of main method
+}//end of ArrayExample

@@ -1,0 +1,11 @@
+/*CJ Gehin-Scott
+ * 10/22/2013
+ * IT-130*/
+
+import java.util.Scanner;
+
+public class Encryption{
+  public static void main(String[] args){
+    
+  }//end main method
+}//end Encryption class

@@ -8,7 +8,7 @@ public class Circle{
   public static void main(String[] args){
     
     //Instance Variables
-    int radius;
+    double radius;
     double diameter;
     double circumference;
     double area;
@@ -16,7 +16,7 @@ public class Circle{
     int choice;
     //Input
     System.out.println("Please enter the radius of a circle: ");
-    radius = inputBox.nextInt();
+    radius = inputBox.nextDouble();
     System.out.println("Enter 1 for the Diameter, 2 for the Circumference, and 3 for the area of the circle.");
     choice = inputBox.nextInt();
     

@@ -1,0 +1,18 @@
+/*CJ Gehin-Scott
+ * IT-130
+ * 10/30/2013*/
+
+import java.util.Scanner;
+
+public class Grade{
+  public static void main(String[] args){
+    
+    Scanner input = new Scanner(System.in);
+    int classSize = 0;
+    
+    System.out.println("Enter number of students: ");
+    classSize = input.nextInt();
+    int grades[] = new int[size];
+    
+  }//end main method
+}//end of Grade Class
