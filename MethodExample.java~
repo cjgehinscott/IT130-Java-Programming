@@ -1,0 +1,12 @@
+/*CJ Gehin-Scott
+ * IT-130
+ * 11/5/2013*/
+
+import java.util.Scanner;
+
+public class MethodExample{
+  public static void main(String[] args){
+    
+    
+  }//end main method
+}//end MethodExample class
