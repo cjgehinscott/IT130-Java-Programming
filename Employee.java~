@@ -1,7 +1,7 @@
 public class Employee{
  public String firstName;
  public String lastName;
- public double mothlySalary;
+ public double monthlySalary;
   
   public Employee(){
   }//begin Employee constructor
@@ -12,7 +12,7 @@ public class Employee{
   }//end Employee constructor
   
   public void setFirstName(String _firstName){
-    fistName = _firstName;
+    firstName = _firstName;
   }//firstName setter
   
   public void setLastName(String _lastName){
@@ -35,6 +35,8 @@ public class Employee{
    return monthlySalary; 
   }
   
-  
+  public void raise(double _monthlySalary){
+    
+  }
   
 }//end Employee class
