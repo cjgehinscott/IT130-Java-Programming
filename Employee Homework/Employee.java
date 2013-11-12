@@ -22,8 +22,8 @@ public class Employee{
   
   public void setMonthlySalary(double _monthlySalary){
    monthlySalary = _monthlySalary; 
-   annualSalary = _monthlySalary * 12;
-  }//mothlySalary setter
+   annualSalary = _monthlySalary * 12;// since annual salary is a function of monthly salary I set it in the setMonthlySalary method that way I don't have to worry about doing it later
+  }//mothlySalary setter 
   
   public String getFirstName(){
    return firstName;
@@ -35,11 +35,11 @@ public class Employee{
   
   public double getMonthlySalary(){
    return monthlySalary; 
-  }
+  }//ends getMonthlySalary
   
   public double getAnnualSalary(){
     return annualSalary;
-  }
+  }//ends getAnnualSalary
   
   
   public void employeePrintOut(){

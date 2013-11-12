@@ -2,6 +2,7 @@ public class Employee{
  public String firstName;
  public String lastName;
  public double monthlySalary;
+ public double annualSalary;
   
   public Employee(){
   }//begin Employee constructor
@@ -21,6 +22,7 @@ public class Employee{
   
   public void setMonthlySalary(double _monthlySalary){
    monthlySalary = _monthlySalary; 
+   annualSalary = _monthlySalary * 12;
   }//mothlySalary setter
   
   public String getFirstName(){
@@ -31,12 +33,20 @@ public class Employee{
     return lastName;
   }//lastName getter
   
-  public double monthlySalary(){
+  public double getMonthlySalary(){
    return monthlySalary; 
   }
   
-  public void raise(double _monthlySalary){
-    
+  public double getAnnualSalary(){
+    return annualSalary;
+  }
+  
+  
+  public void employeePrintOut(){
+   System.out.println("First Name: " + firstName);
+   System.out.println("Last Name: " + lastName);
+   System.out.printf("Annual salary: $%.2f", annualSalary);
+   System.out.println();
   }
   
 }//end Employee class
