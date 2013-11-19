@@ -30,7 +30,19 @@ public class EmployeeTest{
     staff1.setLastName("Lincoln");
     staff1.setMonthlySalary(6450.00);
     staff1.employeePrintOut();
-   
+    
+    Staff staff2 = new Staff();
+    staff2.setJobType("Part-Time");
+    staff2.setSSN(756938475);
+    staff2.setFirstName("David");
+    staff2.setLastName("Brown");
+    staff2.setMonthlySalary(7438.45);
+    staff2.employeePrintOut();
+    
+    Employee e3 = new Employee(74934876, "Mark", "Smith", 8940.78);
+    Staff staff3 = new Staff(546832840, "Matthew", "Hamilton", 8475.89, "Part-Time");
+    StaffHourly sh1 = new StaffHourly(764980283, "Zach", "Brown", 0 , "Part-Time", 27.5, 8.75);
+    sh1.displayInfo();
     
   }//end main method
 }//end EmployeeTest class

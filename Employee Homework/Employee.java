@@ -6,6 +6,10 @@ public class Employee{
  public double annualSalary;
   
  public Employee(){
+   ssn = 0;
+   firstName = "";
+   lastName = "";
+   monthlySalary = 0;
  }//begin default Employee Constructor
  public Employee(int _ssn, String _firstName, String _lastName, double _monthlySalary){
  ssn = _ssn;

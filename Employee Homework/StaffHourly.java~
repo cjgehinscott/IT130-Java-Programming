@@ -1,0 +1,12 @@
+public class StaffHourly extends Staff {
+ double hours;
+ double payRate;
+  public StaffHourly(){
+    
+  }//ends default constructor
+  
+  public StaffHourly(int _ssn,String _firstName,String _lastName,String _jobType,double _hours,double payRate){
+    super(int _ssn, String _firstName, String _lastName, String _jobType);
+    hours = _hours;
+    payRate = _payRate;
+}
