@@ -1,21 +1,30 @@
-public class Employee{
+//superclass employee
+
+
+public abstract class Employee{
  private int ssn;
  private String firstName;
  private String lastName;
  public double monthlySalary;
  public double annualSalary;
+ private String jobType;
+ 
+ //public abstract double getAnnualSalary();
   
  public Employee(){
    ssn = 0;
    firstName = "";
    lastName = "";
    monthlySalary = 0;
- }//begin default Employee Constructor
- public Employee(int _ssn, String _firstName, String _lastName, double _monthlySalary){
+   jobType="";
+ }//end blank Employee Constructor
+ 
+ public Employee(int _ssn, String _firstName, String _lastName, double _monthlySalary, String _jobType){
  ssn = _ssn;
  firstName = _firstName;
  lastName = _lastName;
  monthlySalary = _monthlySalary;
+ jobType =_jobType;
  }//end default Employee Contructor
  
   
@@ -36,8 +45,8 @@ public class Employee{
   }//lastName setter
   
   public void setMonthlySalary(double _monthlySalary){
-   monthlySalary = _monthlySalary; 
-   annualSalary = _monthlySalary * 12;// since annual salary is a function of monthly salary I set it in the setMonthlySalary method that way I don't have to worry about doing it later
+   monthlySalary = _monthlySalary;
+   annualSalary = _monthlySalary * 12;
   }//mothlySalary setter 
   
   public String getFirstName(){
@@ -52,16 +61,25 @@ public class Employee{
    return monthlySalary; 
   }//ends getMonthlySalary
   
+   public void setJobType(String _jobType){
+    jobType = _jobType;
+  }//ends setJobType
+  
+  public String getJobType(){
+    return jobType;
+  }//ends getJobType
+  
   public double getAnnualSalary(){
     return annualSalary;
   }//ends getAnnualSalary
+  
   
   
   public void employeePrintOut(){
    System.out.println("SSN: " + ssn);
    System.out.println("First Name: " + firstName);
    System.out.println("Last Name: " + lastName);
-   System.out.printf("Annual salary: $%.2f", annualSalary);
+   System.out.printf("Annual Salary: $%.2f", annualSalary);
    System.out.println();
   }
   

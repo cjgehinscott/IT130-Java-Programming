@@ -1,0 +1,24 @@
+public class DomesticDivision extends Division{
+ public String state;
+ 
+ public DomesticDivision(){
+  super();
+  state = "";
+ }//end default constructor
+ 
+ public DomesticDivision(String _divisionName, String accountNumber, String _state){
+   super(_divisionName, _accountNumber);
+   state = _state;
+ }
+ 
+ public void setState(_state){
+   state = _state;
+ }
+ public String getState(){
+   return state;
+ }
+ 
+ public void display(){
+ 
+ }
+}

@@ -1,6 +1,6 @@
 public class EmployeeTest{
   public static void main(String[] args){
-    Employee e1 = new Employee();
+    /*Employee e1 = new Employee();
     e1.setSSN(985743643);
     e1.setFirstName("John");
     e1.setLastName("Smith");
@@ -20,9 +20,9 @@ public class EmployeeTest{
     raise = (e2.getMonthlySalary() * 0.10) + e2.getMonthlySalary();
     e2.setMonthlySalary(raise);
     System.out.printf("%s's new annual salary is: $%.2f",e2.getFirstName(),e2.getAnnualSalary());
-    System.out.println();
+    System.out.println();*/
     
-    Staff staff1 = new Staff();
+    StaffHourly staff1 = new StaffHourly();
     staff1.setJobType("Full-Time");
     System.out.println("The Job Type is: " + staff1.getJobType() + ".");
     staff1.setSSN(837467465);
@@ -31,7 +31,7 @@ public class EmployeeTest{
     staff1.setMonthlySalary(6450.00);
     staff1.employeePrintOut();
     
-    Staff staff2 = new Staff();
+    StaffHourly staff2 = new StaffHourly();
     staff2.setJobType("Part-Time");
     staff2.setSSN(756938475);
     staff2.setFirstName("David");
@@ -39,10 +39,13 @@ public class EmployeeTest{
     staff2.setMonthlySalary(7438.45);
     staff2.employeePrintOut();
     
-    Employee e3 = new Employee(74934876, "Mark", "Smith", 8940.78);
-    Staff staff3 = new Staff(546832840, "Matthew", "Hamilton", 8475.89, "Part-Time");
-    StaffHourly sh1 = new StaffHourly(764980283, "Zach", "Brown", 0 , "Part-Time", 27.5, 8.75);
-    sh1.displayInfo();
+    //Employee e3 = new Employee(74934876, "Mark", "Smith", 8940.78);
+    StaffHourly staff3 = new StaffHourly(546832840, "Matthew", "Hamilton", 8475.89, "Part-Time", 28, 10.25);
+    StaffHourly staff4 = new StaffHourly(764980283, "Zach", "Brown", 0 , "Part-Time", 27.5, 8.75);
+    staff4.displayInfo();
+    staff3.displayInfo();
+    StaffMonthly staff5 = new StaffMonthly(875948525, "Bobby", "Hamilton", 8560.00, "Full-Time");
+    staff5.displayInfo();
     
   }//end main method
 }//end EmployeeTest class

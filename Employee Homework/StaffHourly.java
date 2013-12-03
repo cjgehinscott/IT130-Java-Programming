@@ -1,7 +1,11 @@
-public class StaffHourly extends Staff {
+public class StaffHourly extends Employee{
  double hours;
  double payRate;
  double payCheck;
+ 
+ public double getAnnualSalary(){
+   return annualSalary;
+ }
   
  public StaffHourly(){
     super();

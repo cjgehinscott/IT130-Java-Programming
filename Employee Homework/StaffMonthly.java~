@@ -1,0 +1,10 @@
+public class StaffMonthly extends Employee{
+  public void displayInfo(){
+   System.out.println("SSN: " + ssn);
+   System.out.println("First Name: " + firstName);
+   System.out.println("Last Name: " + lastName);
+   System.out.printf("Annual salary: $%.2f", annualSalary);
+   System.out.println(); 
+  }
+  
+}
